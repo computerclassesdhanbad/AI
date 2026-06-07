@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Classes Dhanbad — सब कुछ सीखो | 9122445666</title>
+<meta name="description" content="Dhanbad ki best computer classes — MS Office, Python, Web Design, Tally, Coding, AI sab sikhao. Call 9122445666. Ghar baithe ya centre pe aao.">
+<meta name="keywords" content="computer classes dhanbad, coding classes dhanbad, python classes dhanbad, ms office dhanbad, computer course jharkhand">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #0a0f1e;
+    --accent: #e94560;
+    --accent2: #0f3460;
+    --gold: #f5a623;
+    --green: #00c9a7;
+    --purple: #7b2fff;
+    --text: #e8e8f0;
+    --text-muted: #9090b0;
+    --card-bg: #16213e;
+    --card-border: #1e3a6e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--primary);
+    color: var(--text);
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* FLOATING WHATSAPP */
+  .wa-float {
+    position: fixed;
+    bottom: 24px; right: 24px;
+    z-index: 999;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7); }
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0f0c29, #1a1a4e, #0f3460);
+    padding: 70px 20px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 700px; height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(233,69,96,0.12) 0%, transparent 70%);
+    top: -300px; left: 50%; transform: translateX(-50%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(233,69,96,0.15);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+  .hero h1 span { color: var(--accent); }
+  .hero p {
+    font-size: 17px;
+    color: #aab;
+    max-width: 650px;
+    margin: 0 auto 32px;
+  }
+  .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-primary:hover { background: #c73550; transform: translateY(-2px); }
+  .btn-secondary {
+    background: transparent;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: 2px solid rgba(255,255,255,0.3);
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { border-color: #fff; background: rgba(255,255,255,0.05); }
+  .hero-stats {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat .num { font-family: 'Baloo 2', sans-serif; font-size: 2rem; font-weight: 800; color: var(--accent); }
+  .hero-stat .lbl { font-size: 12px; color: #889; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* NAV */
+  nav {
+    background: rgba(10,15,30,0.97);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 20px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid #1e3060;
+  }
+  nav a {
+    color: #aab;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  nav a:hover { background: var(--accent); color: #fff; }
+
+  /* SECTIONS */
+  section { padding: 70px 20px; max-width: 1100px; margin: 0 auto; }
+  .section-title {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  .section-title span { color: var(--accent); }
+  .section-subtitle {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1e3060;
+  }
+  .sec-bar { display: inline-block; width: 4px; height: 30px; background: var(--accent); border-radius: 4px; vertical-align: middle; margin-right: 10px; }
+  .divider { height: 1px; background: linear-gradient(to right, transparent, #1e4080, transparent); }
+
+  /* CARDS */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 26px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, transform 0.2s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .card h3 { font-family: 'Baloo 2', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: #fff; }
+  .card p { color: #bbc; line-height: 1.9; font-size: 15px; }
+
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+
+  /* SERVICE CARD */
+  .service-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .service-card:hover { border-color: var(--accent); transform: translateY(-4px); background: #1a2a50; }
+  .service-card .icon { font-size: 2.4rem; margin-bottom: 12px; display: block; }
+  .service-card h3 { font-family: 'Baloo 2', sans-serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .service-card p { font-size: 13px; color: #99aabb; line-height: 1.6; }
+  .service-card .level {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 3px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .level.beginner { background: rgba(0,201,167,0.15); color: #00e0b8; border: 1px solid rgba(0,201,167,0.3); }
+  .level.intermediate { background: rgba(245,166,35,0.15); color: #ffc55a; border: 1px solid rgba(245,166,35,0.3); }
+  .level.advanced { background: rgba(233,69,96,0.15); color: #ff8099; border: 1px solid rgba(233,69,96,0.3); }
+
+  /* HIGHLIGHT */
+  .highlight {
+    background: linear-gradient(135deg, rgba(233,69,96,0.08), rgba(123,47,255,0.08));
+    border: 1px solid rgba(233,69,96,0.25);
+    border-radius: 16px;
+    padding: 26px 30px;
+    margin: 24px 0;
+  }
+  .highlight.green { background: linear-gradient(135deg, rgba(0,201,167,0.07), rgba(0,100,80,0.07)); border-color: rgba(0,201,167,0.25); }
+  .highlight.gold { background: linear-gradient(135deg, rgba(245,166,35,0.07), rgba(180,120,0,0.07)); border-color: rgba(245,166,35,0.25); }
+  .highlight.blue { background: linear-gradient(135deg, rgba(15,52,96,0.5), rgba(10,30,70,0.5)); border-color: rgba(100,150,255,0.2); }
+
+  /* CONTACT */
+  .contact-big {
+    background: linear-gradient(135deg, #0f3460, #16213e);
+    border: 1px solid #1e4a80;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+  }
+  .contact-big .phone {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 800;
+    color: var(--green);
+    display: block;
+    margin: 16px 0;
+    letter-spacing: 2px;
+  }
+  .contact-big p { color: #aab; font-size: 16px; margin-bottom: 24px; }
+
+  /* TAGS */
+  .tag { display: inline-block; background: rgba(123,47,255,0.18); color: #b090ff; border: 1px solid rgba(123,47,255,0.35); padding: 4px 12px; border-radius: 50px; font-size: 12px; margin: 3px; }
+  .tag.green { background: rgba(0,201,167,0.12); color: #00e0b8; border-color: rgba(0,201,167,0.3); }
+  .tag.gold { background: rgba(245,166,35,0.12); color: #ffc55a; border-color: rgba(245,166,35,0.3); }
+  .tag.red { background: rgba(233,69,96,0.12); color: #ff8099; border-color: rgba(233,69,96,0.3); }
+
+  /* TIMELINE */
+  .timeline { position: relative; padding-left: 30px; }
+  .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent), var(--purple)); }
+  .tl-item { position: relative; margin-bottom: 30px; }
+  .tl-item::before { content: ''; position: absolute; left: -26px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid var(--primary); }
+  .tl-year { font-family: 'Baloo 2', sans-serif; font-size: 0.82rem; color: var(--accent); font-weight: 700; letter-spacing: 1px; margin-bottom: 3px; }
+  .tl-item h4 { font-family: 'Baloo 2', sans-serif; font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 5px; }
+  .tl-item p { color: #aab; font-size: 14px; }
+
+  /* PROMPT BOX */
+  .prompt-box {
+    background: #060a14;
+    border: 1px solid #1e3a6e;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 14px 0;
+    font-family: monospace;
+    font-size: 13.5px;
+    color: #7ec8e3;
+    position: relative;
+    line-height: 1.7;
+  }
+  .prompt-box::before { content: 'PROMPT'; position: absolute; top: -10px; left: 16px; background: var(--accent); color: #fff; font-family: 'Noto Sans Devanagari', sans-serif; font-size: 10px; padding: 2px 10px; border-radius: 50px; }
+
+  /* AI TABLE */
+  .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid #1e3060; }
+  .ai-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 600px; }
+  .ai-table th { background: #0f3460; color: #fff; padding: 12px 16px; text-align: left; font-family: 'Baloo 2', sans-serif; font-weight: 600; white-space: nowrap; }
+  .ai-table td { padding: 11px 16px; border-bottom: 1px solid #1e3060; color: #bbc; vertical-align: top; }
+  .ai-table tr:hover td { background: rgba(255,255,255,0.02); }
+  .ai-table .ai-name { color: #fff; font-weight: 600; }
+
+  /* STEP */
+  .step-row { display: flex; align-items: flex-start; margin-bottom: 18px; gap: 12px; }
+  .step-num { display: inline-flex; align-items: center; justify-content: center; min-width: 30px; height: 30px; background: var(--accent); color: #fff; border-radius: 50%; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 13px; flex-shrink: 0; margin-top: 3px; }
+  .step-row p { color: #bbc; font-size: 15px; line-height: 1.7; }
+
+  /* MONEY CARD */
+  .money-card { background: linear-gradient(135deg, #0f3460, #16213e); border: 1px solid #1e4080; border-radius: 16px; padding: 22px; position: relative; overflow: hidden; }
+  .money-card::after { content: '₹'; position: absolute; right: -8px; top: -20px; font-size: 110px; color: rgba(245,166,35,0.05); font-family: 'Baloo 2', sans-serif; font-weight: 800; pointer-events: none; }
+  .money-card h3 { font-family: 'Baloo 2', sans-serif; font-size: 1rem; font-weight: 700; color: var(--gold); margin-bottom: 8px; }
+  .money-card .earning { font-family: 'Baloo 2', sans-serif; font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 6px; }
+  .money-card p { color: #99aacc; font-size: 13px; }
+
+  /* DEBATE */
+  .debate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media(max-width:600px) { .debate-grid { grid-template-columns: 1fr; } }
+  .debate-card { border-radius: 16px; padding: 22px; }
+  .debate-card.fear { background: rgba(233,69,96,0.07); border: 1px solid rgba(233,69,96,0.22); }
+  .debate-card.use { background: rgba(0,201,167,0.06); border: 1px solid rgba(0,201,167,0.22); }
+  .debate-card h3 { font-family: 'Baloo 2', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 14px; }
+  .debate-card.fear h3 { color: var(--accent); }
+  .debate-card.use h3 { color: var(--green); }
+  .debate-card li { font-size: 14px; color: #bbc; margin-bottom: 10px; list-style: none; padding-left: 22px; position: relative; }
+  .debate-card.fear li::before { content: '⚠'; position: absolute; left: 0; }
+  .debate-card.use li::before { content: '✓'; position: absolute; left: 0; color: var(--green); }
+
+  /* FOOTER */
+  footer { background: #060a14; padding: 50px 20px 30px; text-align: center; border-top: 1px solid #1e3060; }
+  footer .footer-logo { font-family: 'Baloo 2', sans-serif; font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 4px; }
+  footer .footer-logo span { color: var(--accent); }
+  footer .footer-phone { font-family: 'Baloo 2', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--green); margin: 10px 0 20px; display: block; }
+  footer p { color: #556; font-size: 13px; margin-bottom: 6px; }
+
+  @media(max-width:600px) { section { padding: 50px 16px; } .hero { padding: 55px 16px 40px; } .contact-big { padding: 28px 20px; } }
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: #060a14; }
+  ::-webkit-scrollbar-thumb { background: #1e4080; border-radius: 10px; }
+
+  /* BADGE STRIP */
+  .badge-strip { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin: 28px 0; }
+  .badge { background: rgba(255,255,255,0.05); border: 1px solid #1e3a6e; border-radius: 50px; padding: 8px 20px; font-size: 13px; color: #ccd; display: flex; align-items: center; gap: 6px; }
+  .badge span { color: var(--green); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://wa.me/919122445666" target="_blank">
+  💬 WhatsApp करो
+</a>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">📍 Dhanbad, Jharkhand • Best Computer Classes</div>
+  <h1>Computer Classes <span>Dhanbad</span><br>सब कुछ सीखो — एक ही जगह</h1>
+  <p>MS Office से Python तक, Basic से Advanced तक — Dhanbad की सबसे trusted computer classes। Hindi medium में सीखो, confident बनो।</p>
+  <div class="hero-btns">
+    <a href="https://wa.me/919122445666" class="btn-primary" target="_blank">💬 अभी Join करो</a>
+    <a href="tel:9122445666" class="btn-secondary">📞 Call करो</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">500+</div><div class="lbl">Students Trained</div></div>
+    <div class="hero-stat"><div class="num">15+</div><div class="lbl">Courses Available</div></div>
+    <div class="hero-stat"><div class="num">Hindi</div><div class="lbl">Medium में पढ़ाई</div></div>
+    <div class="hero-stat"><div class="num">📍</div><div class="lbl">Dhanbad, Jharkhand</div></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#services">📚 Courses</a>
+  <a href="#contact">📞 Contact</a>
+  <a href="#history">🤖 AI इतिहास</a>
+  <a href="#types">AI Types</a>
+  <a href="#coding">💻 Coding</a>
+  <a href="#paisa">💰 पैसा</a>
+  <a href="#tuition">🏫 ट्यूशन</a>
+  <a href="#youtube">🎬 YouTube</a>
+  <a href="#compare">⚖️ AI Compare</a>
+  <a href="#future">🚀 Future</a>
+  <a href="#fear">डरें या नहीं?</a>
+</nav>
+
+<div class="divider"></div>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services">
+  <div class="section-title"><span class="sec-bar"></span>हमारे <span>Courses</span> — क्या-क्या सिखाते हैं?</div>
+  <p class="section-subtitle">Beginner से Advanced तक — सब levels के लिए courses available हैं</p>
+
+  <div class="grid-4">
+    <div class="service-card">
+      <span class="icon">🖥️</span>
+      <h3>Basic Computer</h3>
+      <p>Computer चालू करना, typing, internet, email — बिल्कुल शुरुआत से</p>
+      <span class="level beginner">Beginner</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">📊</span>
+      <h3>MS Office</h3>
+      <p>Word, Excel, PowerPoint — job के लिए सबसे ज़रूरी skills</p>
+      <span class="level beginner">Beginner</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">🐍</span>
+      <h3>Python Programming</h3>
+      <p>Programming की शुरुआत — सबसे आसान और powerful language</p>
+      <span class="level intermediate">Intermediate</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">🌐</span>
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript — खुद की website बनाओ</p>
+      <span class="level intermediate">Intermediate</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">📱</span>
+      <h3>Digital Marketing</h3>
+      <p>Facebook Ads, Instagram, YouTube SEO — online business बढ़ाओ</p>
+      <span class="level intermediate">Intermediate</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">💹</span>
+      <h3>Tally & Accounting</h3>
+      <p>Tally Prime, GST, Billing — accounts job के लिए perfect</p>
+      <span class="level beginner">Beginner</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">🤖</span>
+      <h3>AI & ChatGPT</h3>
+      <p>AI tools use करना — 2026 की सबसे demanded skill</p>
+      <span class="level beginner">Beginner</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">🎨</span>
+      <h3>Graphic Design</h3>
+      <p>Canva, Photoshop basics — posters, banners, logos बनाओ</p>
+      <span class="level intermediate">Intermediate</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">☁️</span>
+      <h3>Data Entry & DTP</h3>
+      <p>Fast typing, data entry, page making — government jobs के लिए</p>
+      <span class="level beginner">Beginner</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">🔒</span>
+      <h3>Cyber Security Basics</h3>
+      <p>Online safety, fraud से बचाव — हर किसी के लिए ज़रूरी</p>
+      <span class="level beginner">Beginner</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">📊</span>
+      <h3>Advanced Excel</h3>
+      <p>VLOOKUP, Pivot Table, Formulas — MNC jobs के लिए</p>
+      <span class="level advanced">Advanced</span>
+    </div>
+    <div class="service-card">
+      <span class="icon">🏫</span>
+      <h3>Home Tuition</h3>
+      <p>घर पर आकर पढ़ाएँगे — School/College students के लिए</p>
+      <span class="level beginner">All Levels</span>
+    </div>
+  </div>
+
+  <div class="badge-strip">
+    <div class="badge">📍 <span>Dhanbad</span> में Classes</div>
+    <div class="badge">🏠 <span>Home</span> Tuition Available</div>
+    <div class="badge">🗣️ <span>Hindi</span> Medium में</div>
+    <div class="badge">📜 <span>Certificate</span> मिलेगा</div>
+    <div class="badge">📞 <span>9122445666</span></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="section-title"><span class="sec-bar"></span><span>Contact</span> करो — Admission लो</div>
+  <p class="section-subtitle">अभी call करो या WhatsApp करो — free demo class available है</p>
+
+  <div class="contact-big">
+    <p style="color:#aab;font-size:18px;">📞 Call या WhatsApp करो</p>
+    <a href="tel:9122445666" class="phone">91224 45666</a>
+    <p>Dhanbad, Jharkhand • सोमवार–शनिवार • सुबह 8 बजे–रात 8 बजे</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+      <a href="https://wa.me/919122445666" class="btn-primary" target="_blank">💬 WhatsApp पर Message करो</a>
+      <a href="tel:9122445666" class="btn-secondary">📞 अभी Call करो</a>
+    </div>
+    <p style="margin-top:20px;color:#667;font-size:13px;">✅ Free Demo Class • ✅ Flexible Timing • ✅ Certificate • ✅ Job Support</p>
+  </div>
+
+  <div class="grid-3" style="margin-top:24px;">
+    <div class="card">
+      <h3>🕐 Batch Timing</h3>
+      <p>
+        ➤ Morning Batch: 7 AM – 10 AM<br>
+        ➤ Afternoon: 12 PM – 3 PM<br>
+        ➤ Evening: 5 PM – 8 PM<br>
+        ➤ Weekend Special Batch<br>
+        ➤ Custom timing possible
+      </p>
+    </div>
+    <div class="card">
+      <h3>✅ Fees की जानकारी</h3>
+      <p>
+        ➤ Basic Course: बहुत affordable<br>
+        ➤ EMI में भी payment संभव<br>
+        ➤ Group discount available<br>
+        ➤ Students के लिए special rate<br>
+        ➤ Details के लिए call करो: <strong style="color:var(--green)">9122445666</strong>
+      </p>
+    </div>
+    <div class="card">
+      <h3>🎁 Join करने पर मिलेगा</h3>
+      <p>
+        ➤ Free study material<br>
+        ➤ Course completion certificate<br>
+        ➤ Job placement support<br>
+        ➤ Doubt clearing sessions<br>
+        ➤ WhatsApp support group
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== AI HISTORY ===================== -->
+<section id="history">
+  <div class="section-title"><span class="sec-bar"></span>AI का <span>इतिहास</span> — कैसे बनी यह तकनीक?</div>
+  <p class="section-subtitle">1950 से 2026 तक — किसने सोचा, क्या बना, और आज कहाँ पहुँचे</p>
+
+  <div class="highlight">
+    <h3 style="font-family:'Baloo 2',sans-serif;font-size:1.15rem;color:#fff;margin-bottom:10px;">🧠 AI क्या है?</h3>
+    <p style="color:#bbc;">Artificial Intelligence (कृत्रिम बुद्धिमत्ता) — computer को इंसान की तरह सोचने, सीखने और निर्णय लेने की क्षमता। Machine Learning, Deep Learning, Natural Language Processing (NLP) इसमें शामिल हैं। सरल भाषा में — AI वो software है जो experience से सीखता है, जैसे एक बच्चा सीखता है।</p>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-year">1950</div>
+      <h4>Alan Turing का सवाल — "Can machines think?"</h4>
+      <p>British mathematician Alan Turing ने "Turing Test" दिया — अगर machine इंसान की तरह बात करे, तो वो intelligent है। यही AI की नींव थी।</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">1956</div>
+      <h4>Dartmouth Conference — "Artificial Intelligence" नाम पड़ा</h4>
+      <p>John McCarthy, Marvin Minsky, Claude Shannon ने पहली बार "Artificial Intelligence" शब्द use किया। AI officially एक field बनी।</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">1997</div>
+      <h4>Deep Blue ने Chess Champion को हराया</h4>
+      <p>IBM का Deep Blue, world chess champion Garry Kasparov को हरा दिया। Prove हुआ — machines specific tasks में humans से बेहतर हो सकती हैं।</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2006</div>
+      <h4>Deep Learning की शुरुआत</h4>
+      <p>Geoffrey Hinton ने Neural Networks की नई technique develop की। Machines images, sound, text समझने लगीं। Modern AI की असली शुरुआत।</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2017</div>
+      <h4>Transformer Architecture — सबसे बड़ा Breakthrough</h4>
+      <p>Google का "Attention is All You Need" paper। GPT, Claude, Gemini सब इसी पर based हैं। AI हमेशा के लिए बदल गया।</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2022</div>
+      <h4>ChatGPT — आम लोगों तक AI पहुँची</h4>
+      <p>5 दिन में 1 million users, 2 महीने में 100 million। किसी भी technology की सबसे तेज़ growth। पूरी दुनिया AI पर आ गई।</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2025-2026</div>
+      <h4>AI Agents — अब AI खुद काम करता है</h4>
+      <p>सिर्फ जवाब नहीं — AI खुद computer चलाता है, code लिखता है, tasks complete करता है। Claude Code, GPT-4o यही करते हैं।</p>
+    </div>
+  </div>
+
+  <div class="highlight gold">
+    <h3 style="font-family:'Baloo 2',sans-serif;color:var(--gold);margin-bottom:10px;">🤔 किसने सोचा था यह होगा?</h3>
+    <p style="color:#bbc;">Alan Turing ने 1950 में predict किया था। Bill Gates ने 2023 में कहा — "ChatGPT उतना ही revolutionary है जितना 1980 में GUI था।" Sam Altman (OpenAI CEO) मानते हैं AI जल्द AGI तक पहुँचेगा। किसी ने नहीं सोचा था इतनी जल्दी होगा।</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== AI TYPES ===================== -->
+<section id="types">
+  <div class="section-title"><span class="sec-bar"></span>AI के <span>प्रकार</span> — सब का ज्ञान अलग है</div>
+  <p class="section-subtitle">हर AI अलग data पर train होता है — इसलिए हर एक की capability अलग</p>
+
+  <div class="grid-3">
+    <div class="card"><span style="font-size:2rem;display:block;margin-bottom:10px;">🗣️</span><h3>Language AI (LLM)</h3><p>ChatGPT, Claude, Gemini। Text पढ़ना, लिखना, code करना। Billions of pages पढ़कर train हुए।</p><div style="margin-top:10px;"><span class="tag">Claude</span><span class="tag">ChatGPT</span><span class="tag">Gemini</span></div></div>
+    <div class="card"><span style="font-size:2rem;display:block;margin-bottom:10px;">🎨</span><h3>Image AI</h3><p>Text लिखो, image बन जाए। Midjourney, DALL-E 3, Stable Diffusion। हर एक का style अलग।</p><div style="margin-top:10px;"><span class="tag gold">Midjourney</span><span class="tag gold">DALL-E</span></div></div>
+    <div class="card"><span style="font-size:2rem;display:block;margin-bottom:10px;">🎬</span><h3>Video AI</h3><p>Text से video। Sora, Veo 2, Runway ML। 2026 में बहुत advance हो गए।</p><div style="margin-top:10px;"><span class="tag red">Sora</span><span class="tag red">Veo 2</span></div></div>
+    <div class="card"><span style="font-size:2rem;display:block;margin-bottom:10px;">🔊</span><h3>Voice AI</h3><p>ElevenLabs, Suno AI। किसी की भी आवाज़ clone, music बनाओ।</p><div style="margin-top:10px;"><span class="tag green">ElevenLabs</span><span class="tag green">Suno</span></div></div>
+    <div class="card"><span style="font-size:2rem;display:block;margin-bottom:10px;">💻</span><h3>Coding AI</h3><p>GitHub Copilot, Claude Code, Cursor। Developers की productivity 5-10x बढ़ा देते हैं।</p><div style="margin-top:10px;"><span class="tag">Copilot</span><span class="tag">Cursor</span></div></div>
+    <div class="card"><span style="font-size:2rem;display:block;margin-bottom:10px;">🤖</span><h3>AI Agents (2026)</h3><p>AI खुद काम करता है — browse, click, email, code। सबसे नई technology।</p><div style="margin-top:10px;"><span class="tag red">New 2026</span></div></div>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <h3>🧠 तीन Level का AI</h3>
+    <div class="grid-3" style="margin-top:14px;">
+      <div><div style="color:var(--green);font-weight:700;margin-bottom:6px;">Narrow AI (अभी)</div><p style="font-size:14px;">एक काम में expert। आज के सभी AI यही हैं — chat, image, code।</p></div>
+      <div><div style="color:var(--gold);font-weight:700;margin-bottom:6px;">AGI — General AI (जल्द?)</div><p style="font-size:14px;">इंसान जैसी सोच हर काम में। Scientists मानते हैं 2027-2030 के बीच।</p></div>
+      <div><div style="color:var(--accent);font-weight:700;margin-bottom:6px;">Super AI (भविष्य)</div><p style="font-size:14px;">इंसान से अरबों गुना smart। अभी reality नहीं — दशकों बाद शायद।</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== CODING ===================== -->
+<section id="coding">
+  <div class="section-title"><span class="sec-bar"></span>AI से <span>Coding</span> — पूरे तरीके</div>
+  <p class="section-subtitle">2026 में AI से coding सीखना और करवाना — step by step</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>🛠️ Coding AI Tools</h3>
+      <div style="margin-bottom:10px;"><span class="tag green">Claude.ai</span> — Best for explanation + complex logic</div>
+      <div style="margin-bottom:10px;"><span class="tag">GitHub Copilot</span> — VS Code में directly suggest करता है</div>
+      <div style="margin-bottom:10px;"><span class="tag">Cursor AI</span> — AI-powered code editor</div>
+      <div style="margin-bottom:10px;"><span class="tag red">ChatGPT</span> — General purpose coding</div>
+      <div><span class="tag gold">Replit AI</span> — Browser में code + deploy</div>
+    </div>
+    <div class="card">
+      <h3>📋 AI से Coding के Steps</h3>
+      <div class="step-row"><span class="step-num">1</span><p><strong>Problem clearly बताओ</strong> — "Python में calculator बनाओ जो +, -, ×, ÷ करे"</p></div>
+      <div class="step-row"><span class="step-num">2</span><p><strong>Code मिला</strong> — Copy करो, run करो</p></div>
+      <div class="step-row"><span class="step-num">3</span><p><strong>Error आए</strong> — paste करो, AI fix कर देगा</p></div>
+      <div class="step-row"><span class="step-num">4</span><p><strong>Explain करवाओ</strong> — "यह code कैसे काम करता है?"</p></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Baloo 2',sans-serif;color:#fff;margin:30px 0 16px;">💡 Coding Prompts</h3>
+
+  <div class="prompt-box">"मुझे Python में student marks calculator बनाना है। 5 subjects, total, percentage, grade (A/B/C/D/F) निकाले। Code हिंदी comments के साथ दो।"</div>
+  <div class="prompt-box">"यह JavaScript code line by line हिंदी में समझाओ। फिर इसमें login feature add करो: [code यहाँ paste करो]"</div>
+  <div class="prompt-box">"Error आई है: TypeError: 'NoneType' object is not subscriptable — fix करो और बताओ क्यों आई।"</div>
+
+  <div class="highlight green" style="margin-top:24px;">
+    <h3 style="font-family:'Baloo 2',sans-serif;color:var(--green);margin-bottom:8px;">⚠️ Important — AI का code blindly copy मत करो</h3>
+    <p style="color:#bbc;">AI का code हमेशा perfect नहीं होता। Test करो, समझो। AI एक tool है — teacher नहीं। "यह line क्यों लिखी?" हमेशा पूछो।</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== PAISA ===================== -->
+<section id="paisa">
+  <div class="section-title"><span class="sec-bar"></span>AI से <span>पैसा</span> कमाना</div>
+  <p class="section-subtitle">Real तरीके — AI एक multiplier है, shortcut नहीं</p>
+
+  <div class="grid-3">
+    <div class="money-card"><h3>📝 Content Writing</h3><div class="earning">₹15K–50K/माह</div><p>Blogs, articles AI से लिखो। Fiverr, Upwork पर sell करो। Hindi content की बहुत demand।</p></div>
+    <div class="money-card"><h3>💻 Freelance Development</h3><div class="earning">₹20K–1L/माह</div><p>AI से websites, apps बनाओ। AI use करने वाला developer 5x तेज़ काम करता है।</p></div>
+    <div class="money-card"><h3>🎨 Graphic Design</h3><div class="earning">₹10K–40K/माह</div><p>Midjourney/Canva AI से images। Logos, thumbnails, posters बनाओ।</p></div>
+    <div class="money-card"><h3>🎬 YouTube Faceless</h3><div class="earning">₹5K–2L/माह</div><p>Script AI से, voiceover ElevenLabs से। Consistent बनाओ।</p></div>
+    <div class="money-card"><h3>📖 Online Courses</h3><div class="earning">₹8K–80K/माह</div><p>Expertise + AI writing = course। Passive income हो जाती है।</p></div>
+    <div class="money-card"><h3>🤝 AI Consulting</h3><div class="earning">₹30K–2L/माह</div><p>Businesses को AI setup करवाओ। 2026 की fastest growing field।</p></div>
+  </div>
+
+  <div class="highlight gold" style="margin-top:24px;">
+    <h3 style="font-family:'Baloo 2',sans-serif;color:var(--gold);margin-bottom:8px;">💰 सच्चाई</h3>
+    <p style="color:#bbc;">AI एक multiplier है — skill है तो AI उसे 5x करेगा। Skill नहीं है तो AI से कुछ नहीं होगा। पहले Computer Classes Dhanbad में सीखो — फिर AI से speed बढ़ाओ। <strong style="color:var(--gold)">📞 9122445666</strong></p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== TUITION ===================== -->
+<section id="tuition">
+  <div class="section-title"><span class="sec-bar"></span><span>ट्यूशन</span> के लिए AI Prompts</div>
+  <p class="section-subtitle">Teachers और tutors के लिए — AI से lesson plans, questions, notes सब</p>
+
+  <div class="prompt-box">"मैं Class 9 के बच्चों को Triangles पढ़ाना चाहता हूँ। 45 मिनट का lesson plan बनाओ। Activities, examples, 5 practice questions शामिल करो।"</div>
+  <div class="prompt-box">"Photosynthesis को Class 7 के बच्चों को बहुत आसान Hindi में, story के रूप में explain करो।"</div>
+  <div class="prompt-box">"Class 10 Science के लिए 20 MCQ questions बनाओ — 5 easy, 10 medium, 5 hard। CBSE pattern। Answers भी दो।"</div>
+  <div class="prompt-box">"एक student fractions में लगातार गलती करता है। उसके लिए 5 targeted exercises बनाओ।"</div>
+
+  <div class="highlight green" style="margin-top:20px;">
+    <h3 style="font-family:'Baloo 2',sans-serif;color:var(--green);margin-bottom:8px;">🏫 Dhanbad में Online Tuition + AI</h3>
+    <p style="color:#bbc;">AI से course material बनाओ, WhatsApp groups के लिए daily questions, PDF notes जो बेच सको। Computer Classes Dhanbad में यह सब सिखाते हैं। <strong style="color:var(--green)">9122445666</strong> पर call करो।</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== YOUTUBE ===================== -->
+<section id="youtube">
+  <div class="section-title"><span class="sec-bar"></span><span>YouTube</span> के लिए AI</div>
+  <p class="section-subtitle">Ideas से Thumbnail तक — AI से पूरा YouTube workflow</p>
+
+  <div class="grid-2">
+    <div class="card"><h3>🎯 Video Ideas</h3><div class="prompt-box" style="margin-top:10px;font-size:13px;">"मेरा YouTube channel [topic] पर है। Hindi audience के लिए 20 viral video ideas दो — title, hook, thumbnail concept के साथ।"</div></div>
+    <div class="card"><h3>📝 Script लिखवाओ</h3><div class="prompt-box" style="margin-top:10px;font-size:13px;">"इस topic पर 8-10 minute YouTube script: [topic]। पहले 30 sec में hook, Hindi में, end में call-to-action।"</div></div>
+    <div class="card"><h3>🔍 SEO Title & Description</h3><div class="prompt-box" style="margin-top:10px;font-size:13px;">"5 SEO-optimized YouTube titles, 500 words description, 15 tags — topic: [topic]।"</div></div>
+    <div class="card"><h3>♻️ Content Repurpose</h3><div class="prompt-box" style="margin-top:10px;font-size:13px;">"इस YouTube video से: 3 Shorts ideas, 5 Instagram captions, 3 WhatsApp status — [video topic]।"</div></div>
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <h3 style="font-family:'Baloo 2',sans-serif;color:#fff;margin-bottom:8px;">📈 Dhanbad + Hindi YouTube = Big Opportunity</h3>
+    <p style="color:#bbc;">Local content — Dhanbad jobs, Jharkhand schemes, Hindi tech — viral होता है। Computer Classes Dhanbad का अपना YouTube channel बनाओ। हम सिखाते हैं — <strong style="color:var(--accent)">9122445666</strong></p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== AI COMPARE ===================== -->
+<section id="compare">
+  <div class="section-title"><span class="sec-bar"></span>AI की <span>तुलना</span></div>
+  <p class="section-subtitle">Claude, ChatGPT, Gemini — June 2026 का comparison</p>
+
+  <div class="table-wrap">
+    <table class="ai-table">
+      <thead><tr><th>AI</th><th>Company</th><th>सबसे अच्छा</th><th>कमज़ोरी</th><th>Free?</th></tr></thead>
+      <tbody>
+        <tr><td class="ai-name">Claude (Sonnet 4.6)</td><td>Anthropic</td><td>Coding, writing, safe, honest</td><td>Image generation नहीं</td><td>✅ Free</td></tr>
+        <tr><td class="ai-name">ChatGPT (GPT-4o)</td><td>OpenAI</td><td>Versatile, web search, DALL-E</td><td>Hallucinate करता है कभी</td><td>✅ Free (limited)</td></tr>
+        <tr><td class="ai-name">Gemini Ultra 2</td><td>Google</td><td>Google integration, real-time</td><td>Consistency कभी-कभी कम</td><td>✅ Free</td></tr>
+        <tr><td class="ai-name">GitHub Copilot</td><td>Microsoft</td><td>Code completion, VS Code</td><td>Sirf coding, paid</td><td>❌ $10/month</td></tr>
+        <tr><td class="ai-name">Perplexity AI</td><td>Perplexity</td><td>Research, web search, citations</td><td>Creative writing average</td><td>✅ Free basic</td></tr>
+        <tr><td class="ai-name">Krutrim</td><td>Ola (India)</td><td>Hindi, Indian languages</td><td>अभी developing</td><td>✅ Free</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <h3 style="font-family:'Baloo 2',sans-serif;color:#fff;margin-bottom:8px;">🤔 कौन सा use करें?</h3>
+    <p style="color:#bbc;"><strong style="color:var(--accent)">Coding:</strong> Claude + Copilot &nbsp;|&nbsp; <strong style="color:var(--accent)">Research:</strong> Perplexity &nbsp;|&nbsp; <strong style="color:var(--accent)">Writing:</strong> Claude &nbsp;|&nbsp; <strong style="color:var(--accent)">Images:</strong> Midjourney &nbsp;|&nbsp; <strong style="color:var(--accent)">Hindi:</strong> Claude / ChatGPT &nbsp;|&nbsp; <strong style="color:var(--accent)">Free daily use:</strong> Claude.ai</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== FUTURE ===================== -->
+<section id="future">
+  <div class="section-title"><span class="sec-bar"></span>AI का <span>भविष्य</span></div>
+  <p class="section-subtitle">2026 से आगे — क्या होने वाला है?</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>🔮 2027-2028 में</h3>
+      <p>➤ <strong style="color:var(--accent)">AGI के करीब</strong> — human-level AI<br><br>➤ <strong style="color:var(--accent)">AI Doctors</strong> — medical diagnosis<br><br>➤ <strong style="color:var(--accent)">Personalized Education</strong> — हर बच्चे का अलग AI teacher<br><br>➤ <strong style="color:var(--accent)">भारत में AI</strong> — agriculture, healthcare, government</p>
+    </div>
+    <div class="card">
+      <h3>⚠️ Challenges</h3>
+      <p>➤ <strong style="color:var(--gold)">Job Displacement</strong> — कुछ jobs जाएंगी<br><br>➤ <strong style="color:var(--gold)">Deepfakes</strong> — fake content का खतरा<br><br>➤ <strong style="color:var(--gold)">Privacy</strong> — data concerns<br><br>➤ <strong style="color:var(--gold)">Misinformation</strong> — fake news आसान</p>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:20px;">
+    <div class="card"><h3 style="color:var(--accent)">❌ High Risk Jobs</h3><p>➤ Data entry operator<br>➤ Basic customer service<br>➤ Simple translation<br>➤ Basic bookkeeping<br>➤ Low-quality content writing</p></div>
+    <div class="card"><h3 style="color:var(--green)">✅ Safe Jobs</h3><p>➤ Teachers, counselors<br>➤ Electrician, plumber<br>➤ Doctors, surgeons<br>➤ AI engineers<br>➤ Entrepreneurs</p></div>
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <h3 style="font-family:'Baloo 2',sans-serif;color:#fff;margin-bottom:8px;">🇮🇳 Dhanbad / Jharkhand में AI का मौका</h3>
+    <p style="color:#bbc;">Agriculture में crop prediction, healthcare में rural diagnosis, government services — सब AI से better हो रहा है। Computer Classes Dhanbad में AI सीखो और इस wave में आगे रहो। Call: <strong style="color:var(--green)">9122445666</strong></p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== FEAR ===================== -->
+<section id="fear">
+  <div class="section-title"><span class="sec-bar"></span>डरें <span>या</span> इस्तेमाल करें?</div>
+  <p class="section-subtitle">Honest जवाब — बिना exaggeration के</p>
+
+  <div class="debate-grid">
+    <div class="debate-card fear">
+      <h3>😨 डरने की वजहें</h3>
+      <ul>
+        <li>Job market में changes होंगे</li>
+        <li>Deepfakes और fraud बढ़ेगा</li>
+        <li>Privacy का खतरा</li>
+        <li>बच्चों में dependency</li>
+        <li>Misinformation आसान</li>
+        <li>AI का misuse possible</li>
+      </ul>
+    </div>
+    <div class="debate-card use">
+      <h3>🚀 Use करने की वजहें</h3>
+      <ul>
+        <li>Productivity 3-10x बढ़ती है</li>
+        <li>नई jobs बन रही हैं</li>
+        <li>Education accessible हो रही है</li>
+        <li>Healthcare better</li>
+        <li>Small business competitive</li>
+        <li>जो नहीं सीखेगा, पिछड़ेगा</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight gold" style="margin-top:24px;">
+    <h3 style="font-family:'Baloo 2',sans-serif;color:var(--gold);margin-bottom:8px;">💡 असली जवाब</h3>
+    <p style="color:#bbc;">AI एक tool है — जैसे internet, smartphone। Internet आने पर डरे थे — बाद में करोड़ों jobs बनीं। AI भी ऐसा ही करेगा। <strong style="color:#fff;">डरो मत, सीखो।</strong> Computer Classes Dhanbad में आओ — AI, coding, MS Office सब सीखो। <strong style="color:var(--gold)">📞 9122445666</strong></p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== PROMPT TIPS ===================== -->
+<section>
+  <div class="section-title"><span class="sec-bar"></span>Master <span>Prompt Tips</span></div>
+  <p class="section-subtitle">AI से best output पाने के 5 rules</p>
+  <div class="grid-2">
+    <div class="card">
+      <h3>📌 5 Rules</h3>
+      <div class="step-row"><span class="step-num">1</span><p><strong>Context दो</strong> — तुम कौन हो, क्यों पूछ रहे हो</p></div>
+      <div class="step-row"><span class="step-num">2</span><p><strong>Specific रहो</strong> — "कुछ लिखो" नहीं, "500 words Class 8 essay"</p></div>
+      <div class="step-row"><span class="step-num">3</span><p><strong>Format बताओ</strong> — List, paragraph, table, code?</p></div>
+      <div class="step-row"><span class="step-num">4</span><p><strong>Tone बताओ</strong> — Formal, casual, friendly?</p></div>
+      <div class="step-row"><span class="step-num">5</span><p><strong>Example दो</strong> — "इस style में लिखो"</p></div>
+    </div>
+    <div class="card">
+      <h3>🔥 Power Prompts</h3>
+      <div class="prompt-box" style="font-size:12.5px;margin-bottom:12px;">"Act as expert [field] teacher. Explain [topic] to [level] student in Hindi. 3 examples, end with 3 quiz questions."</div>
+      <div class="prompt-box" style="font-size:12.5px;margin-bottom:12px;">"10 ways to [goal] for someone who is [situation]. Rank by ease. Specific, not generic."</div>
+      <div class="prompt-box" style="font-size:12.5px;">"Review this [content]: 1) 5 mistakes 2) 3 improvements 3) Rate /10 with reason."</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Computer Classes <span>Dhanbad</span></div>
+  <a href="tel:9122445666" class="footer-phone">📞 9122445666</a>
+  <p>Dhanbad, Jharkhand • सोमवार–शनिवार • 8 AM – 8 PM</p>
+  <p style="margin:8px 0;">MS Office • Python • Web Development • AI Tools • Tally • Digital Marketing</p>
+  <div style="margin:16px 0;">
+    <a href="https://wa.me/919122445666" class="btn-primary" target="_blank" style="display:inline-flex;">💬 WhatsApp पर Join करो</a>
+  </div>
+  <div style="margin-top:20px;">
+    <span class="tag">Dhanbad ❤️</span>
+    <span class="tag">Jharkhand</span>
+    <span class="tag">Hindi Medium</span>
+    <span class="tag">Computer Classes</span>
+    <span class="tag">2026</span>
+  </div>
+  <p style="margin-top:20px;color:#334;font-size:12px;">© 2026 Computer Classes Dhanbad • computerclassesdhanbad</p>
+</footer>
+
+</body>
+</html>
